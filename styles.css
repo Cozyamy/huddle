@@ -17,7 +17,6 @@ a {
   display: inline-block;
 }
 
-
 .hero {
 	
 	background: url(./images/bg-hero-mobile.svg);
@@ -28,20 +27,20 @@ a {
   
 }
 
-header {
+.headnav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
-header > img {
+.headnav > img {
 	width: 30%;
 	height: auto;
 	margin-top: 30px;
 }
 
-header > button {
+.headnav > button {
 	border: none;
 	justify-content: center;
 	align-items: center;
@@ -60,7 +59,7 @@ header > button {
 	cursor: pointer;
 }
 
-header > button:hover {
+.headnav > button:hover {
 	color: hsl(212, 6%, 53%);
 }
 
@@ -141,38 +140,6 @@ header > button:hover {
 	margin: 30px;
 }
 
-.grow {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	border: none;
-	border-radius: 18px;
-	box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
-	margin: 10px;
-	margin-top: 60px;
-	padding: 10px;
-}
-
-.grow:hover {
-	transform: scale(1.1);
-}
-
-.grow > img {
-	width: 100%;
-	height: auto;
-}
-
-.growtxt {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	padding: 10px;
-}
-
 .growtxt > h2 {
 	margin-top: 30px;
 	font-family: 'Poppins', sans-serif;
@@ -193,7 +160,7 @@ header > button:hover {
 }
 
 
-.flowing {
+.flowing, .your, .grow {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -207,16 +174,16 @@ header > button:hover {
 	padding: 10px;
 }
 
-.flowing:hover {
+.flowing:hover, .your:hover, .grow:hover {
 	transform: scale(1.1);
 }
 
-.flowing > img {
+.flowing > img, .your > img, .grow > img {
 	width: 100%;
 	height: auto;
 }
 
-.flowingtxt {
+.flowingtxt, .yourtxt, .growtxt {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -242,38 +209,6 @@ header > button:hover {
 	font-style: normal;
 	text-align: center;
 	padding-bottom: 20px;
-}
-
-.your {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	border: none;
-	border-radius: 18px;
-	box-shadow: 0px 4px 8px rgba(14, 31, 53, 0.12);
-	margin: 10px;
-	margin-top: 60px;
-	padding: 10px;
-}
-
-.your:hover {
-	transform: scale(1.1);
-}
-
-.your > img {
-	width: 100%;
-	height: auto;
-}
-
-.yourtxt {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	padding: 10px;
 }
 
 .yourtxt > h2 {
@@ -385,20 +320,12 @@ footer {
 	height: 100%;
 }
 
-.location {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	gap: 35px;
-	font-weight: 400;
-}
-
 .location > img {
 	width: auto;
 	height: 100%;
 }
 
-.phone {
+.phone, .email, .location {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -406,70 +333,20 @@ footer {
 	font-weight: 400;
 }
 
-.email {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	gap: 35px;
-	font-weight: 400;
-}
-
-
-
-.menuone {
+.menuone, .menutwo {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 	margin-left: 30px;
 }
 
-.menutwo {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	margin-left: 30px;
-}
-
-#about:hover {
+#about:hover, #what:hover, #FAQ:hover, #career:hover, #blog:hover, #contact:hover {
 	text-decoration: underline;
 	cursor: pointer;
-}
-#what:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-#FAQ:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-#career:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-#blog:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-#contact:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.thesocial {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 .thesocial > h3 {
 	font-size: 14px;
-}
-
-.socials {
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
 }
 
 .fa {
@@ -488,33 +365,14 @@ footer {
   color: white;
 }
 
-.fa-twitter:hover {
-	color: hsl(321, 100%, 65%);
-}
-.fa-instagram:hover {
-	color: hsl(321, 100%, 65%);
-}
-.fa-facebook:hover {
+.fa-twitter:hover, .fa-instagram:hover, .fa-facebook:hover {
 	color: hsl(321, 100%, 65%);
 }
 
-.fa-twitter {
+
+.fa-twitter, .fa-instagram {
 	background: hsl(192, 100%, 9%);
   color: white;
-}
-
-.fa-instagram {
-	background: hsl(192, 100%, 9%);
-  color: white;
-}
-
-.thesocial > div {
-	margin-bottom: 30px;
-}
-
-.thesocial > div:hover {
-	color: hsl(321, 100%, 65%);
-	cursor: pointer;
 }
 
 
@@ -542,7 +400,7 @@ footer {
 }
 
 @media only screen and (min-width: 500px) {
-	header {
+	.headnav {
 		justify-content: space-between;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -575,7 +433,7 @@ footer {
 }
 
 @media only screen and (min-width: 750px) {
-	header {
+	.headnav {
 		justify-content: space-between;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -693,7 +551,7 @@ footer {
 
 	}
 
-header {
+.headnav {
 	padding: 50px;
 }
 
@@ -935,11 +793,6 @@ footer {
 	gap: 15px;
 }
 
-.socials {
-	margin-left: -130px;
-	gap: 5px;
-}
-
 .thesocial {
 	padding-top: 80px;
 	margin-left: -60px;
@@ -949,6 +802,7 @@ footer {
 	margin-left: 20px;
 	font-size: 14px;
 	white-space: nowrap;
+	margin-top: 130px;
 }
 
 .fa {
@@ -986,20 +840,17 @@ footer {
 	padding-bottom: 60px;
 }
 
-.menuone {
+.menuone, .menutwo {
 	margin-left: 0px;
-}
-
-.menutwo {
-	margin-left: 0px;
-}
-
-.socials {
-	margin-left: -160px;
 }
 
 .thesocial {
 	margin-left: 0px;
 }
+
+.thesocial > h3 {
+	margin-top: 130px;
+}
+
 
 }
